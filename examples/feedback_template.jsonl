@@ -1,0 +1,3 @@
+{"figure_type":"method_diagram","rating":"accept","attributes":{"palette":"blue_orange","font_family":"Arial","layout":"left_to_right","line_width":"1.2pt"}}
+{"figure_type":"quantitative_plot","rating":"accept","attributes":{"palette":"colorblind_safe_qualitative","font_family":"Arial","legend_position":"outside_right","axis_style":"thin_black_axes"}}
+{"figure_type":"image_comparison","rating":"reject","attributes":{"panel_spacing":"wide","background":"light_gray"}}
