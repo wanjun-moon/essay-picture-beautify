@@ -31,6 +31,21 @@ Consult `references/figure_types.md` for 14 figure types and `references/design_
 5. Distinguish descriptive grouping borders from actual computational operators; avoid arrows that imply non-existent supervision or information flow.
 6. Keep multiple figures consistent in color-to-method mapping, line styles, panel labels, icons, text sizes and exports.
 
+## Personalized optimization from the user's research materials
+
+When the user explicitly authorizes it, use the selected project papers, original figures, numeric datasets, plotting sources, journal templates and approved visual references to infer a project-specific visual style. Keep scientific facts and visual preferences separate: source data and manuscript content govern values and relationships; user feedback governs presentation parameters only.
+
+Use `references/personalized_optimization.md` for the full procedure. In brief:
+1. Inspect only files selected by the user; do not scan unrelated folders or accounts.
+2. Infer provisional visual settings from approved examples and the target journal.
+3. Generate a figure preview and disclose the settings used.
+4. Record explicit accept/reject feedback. Silence is not approval.
+5. With permission, aggregate feedback by figure type using `scripts/learn_style_profile.py` and a user-selected local JSONL log/profile path.
+6. Apply learned preferences only when there is sufficient support. Journal rules, accessibility, readability and scientific fidelity take priority.
+7. Let the user inspect, edit, export or delete the profile and feedback log.
+
+This feature performs local preference learning and visual-parameter calibration. It does not fine-tune model weights or train a shared model. Never place raw manuscripts, images, patient identifiers, unpublished measurements or credentials in the feedback log, and never transmit project materials by default. If profile creation is not approved, complete the current task without retaining preferences.
+
 ## Production and exports
 - Prefer editable SVG/PDF for diagrams and graphs. Save underlying code/data when plotting. Embed original raster imagery without lossy resampling or modification when pixel fidelity matters.
 - Default deliverables: an editable source, press-ready PDF/SVG, PNG preview, and a concise figure-specific verification note. Use journal artwork guidance when provided; otherwise verify physical width, final-size text, color mode requirements and effective DPI.
@@ -47,3 +62,5 @@ Consult `references/figure_types.md` for 14 figure types and `references/design_
 - `references/design_system.md`: scientific drawing and export standards.
 - `references/paper_index.csv`: index of supplied research articles (titles inferred from supplied filenames; not a substitute for paper review).
 - `references/case_studies.md`: anchored examples of figure/body relationships from the supplied papers.
+- `references/personalized_optimization.md`: opt-in local preference learning, privacy and feedback workflow.
+- `scripts/learn_style_profile.py`: builds a local style profile from explicit accept/reject feedback.
