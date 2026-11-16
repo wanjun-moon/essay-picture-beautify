@@ -14,6 +14,9 @@ Produce publication-ready scientific figures with improved readability, visual h
 3. For each figure, create an internal semantic inventory: panel label, purpose, scientific claim, source provenance, node/arrow meaning, coordinate and color semantics, numerical values and uncertainty, conditions, symbols, exact text, and non-negotiable details.
 4. Establish what may be modified. Safe typical changes: spacing, alignment, fonts, border treatments, decorative backgrounds, legend positions and consistent palettes. Changes to data, methods, images or scientific relationships require validated original source material.
 
+## Evidence mapping
+Match each panel to its research question, figure legend, relevant body claims, methods and source data. Record the experimental unit, conditions, uncertainty and provenance; distinguish theory, simulation, physical measurement, representative examples and proposed mechanisms. Flag contradictions rather than silently resolving them. Consult `references/evidence-mapping.md` for domain-sensitive guidance and checked examples.
+
 ## Figure-type routing
 Consult `references/figure_types.md` for 14 figure types and `references/design_system.md` for style decisions.
 - **Computational methods / neural architectures:** Preserve directed edges, branch joins, operators, label-space mappings, training/inference boundaries, parameters, model freezing, weight sharing and temporal order. Keep symbols identical to the manuscript.
@@ -64,3 +67,4 @@ This feature performs local preference learning and visual-parameter calibration
 - `references/case_studies.md`: anchored examples of figure/body relationships from the supplied papers.
 - `references/personalized_optimization.md`: opt-in local preference learning, privacy and feedback workflow.
 - `scripts/learn_style_profile.py`: builds a local style profile from explicit accept/reject feedback.
+
